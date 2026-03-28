@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — Urban Boomerang</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #C9A84C;
+    --ink: #05080D;
+    --ink2: #080C13;
+    --ink3: #0D1219;
+    --ink4: #111820;
+    --cream: #F0EAD8;
+    --cream70: rgba(240,234,216,0.7);
+    --cream35: rgba(240,234,216,0.35);
+    --border: rgba(255,255,255,0.06);
+    --gold-dim: rgba(201,168,76,0.08);
+    --gold-border: rgba(201,168,76,0.2);
+    --green-dim: rgba(29,184,122,0.08);
+    --green-border: rgba(29,184,122,0.2);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Manrope', sans-serif;
+    background: var(--ink);
+    color: var(--cream);
+    line-height: 1.8;
+  }
+  nav {
+    position: sticky;
+    top: 0;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(5,8,13,0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    z-index: 100;
+  }
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--cream);
+    font-size: 16px;
+    font-weight: 800;
+  }
+  .nav-back {
+    font-size: 13px;
+    color: var(--cream35);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-back:hover { color: var(--gold); }
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 80px 24px 120px;
+  }
+  .doc-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.8;
+    margin-bottom: 16px;
+  }
+  .doc-title {
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    margin-bottom: 12px;
+  }
+  .doc-meta {
+    font-size: 13px;
+    color: var(--cream35);
+    margin-bottom: 56px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+  }
+  .doc-intro {
+    font-size: 17px;
+    color: var(--cream70);
+    line-height: 1.8;
+    margin-bottom: 48px;
+    padding: 28px 32px;
+    background: var(--gold-dim);
+    border: 1px solid var(--gold-border);
+    border-radius: 16px;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--cream);
+    letter-spacing: -0.3px;
+    margin: 48px 0 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--cream);
+    margin: 28px 0 10px;
+  }
+  p {
+    font-size: 15px;
+    color: var(--cream70);
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
+  ul {
+    margin: 12px 0 20px 20px;
+  }
+  ul li {
+    font-size: 15px;
+    color: var(--cream70);
+    line-height: 1.8;
+    margin-bottom: 8px;
+  }
+  strong { color: var(--cream); font-weight: 600; }
+  a { color: var(--gold); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .highlight-box {
+    background: var(--ink3);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px 28px;
+    margin: 24px 0;
+  }
+  .important-box {
+    background: rgba(201,168,76,0.05);
+    border: 1px solid var(--gold-border);
+    border-radius: 14px;
+    padding: 24px 28px;
+    margin: 24px 0;
+  }
+  .contact-box {
+    background: var(--gold-dim);
+    border: 1px solid var(--gold-border);
+    border-radius: 16px;
+    padding: 32px;
+    margin-top: 56px;
+    text-align: center;
+  }
+  .contact-box h2 {
+    border: none;
+    margin-top: 0;
+    font-size: 24px;
+  }
+  footer-doc {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    color: var(--cream35);
+    margin-top: 64px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+  }
+  .toc {
+    background: var(--ink3);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-bottom: 48px;
+  }
+  .toc-title {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--cream35);
+    margin-bottom: 16px;
+  }
+  .toc ol {
+    margin-left: 16px;
+  }
+  .toc ol li {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .toc ol li a {
+    color: var(--cream70);
+  }
+  .toc ol li a:hover { color: var(--gold); }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">🔄 Urban Boomerang</a>
+  <a href="/" class="nav-back">← Back to Home</a>
+</nav>
+
+<div class="container">
+  <div class="doc-eyebrow">Legal</div>
+  <h1 class="doc-title">Terms of Service</h1>
+  <p class="doc-meta">Effective Date: January 1, 2026 &nbsp;·&nbsp; Last Updated: March 27, 2026</p>
+
+  <div class="doc-intro">
+    Please read these Terms carefully before using Urban Boomerang. By creating an account or using our platform, you agree to be bound by these Terms. If you do not agree, do not use Urban Boomerang.
+  </div>
+
+  <div class="toc">
+    <div class="toc-title">Table of Contents</div>
+    <ol>
+      <li><a href="#s1">The Urban Boomerang Platform</a></li>
+      <li><a href="#s2">Eligibility and Account Registration</a></li>
+      <li><a href="#s3">Linking Your Financial Account</a></li>
+      <li><a href="#s4">How Boomerangs Work</a></li>
+      <li><a href="#s5">Community Initiatives and Fund Routing</a></li>
+      <li><a href="#s6">Platform Fees</a></li>
+      <li><a href="#s7">Identity Verification (KYC)</a></li>
+      <li><a href="#s8">Disputes and Refunds</a></li>
+      <li><a href="#s9">Referral Program</a></li>
+      <li><a href="#s10">Retailer Partnerships</a></li>
+      <li><a href="#s11">Prohibited Conduct</a></li>
+      <li><a href="#s12">Intellectual Property</a></li>
+      <li><a href="#s13">Disclaimers and Limitation of Liability</a></li>
+      <li><a href="#s14">Indemnification</a></li>
+      <li><a href="#s15">Dispute Resolution and Arbitration</a></li>
+      <li><a href="#s16">Termination</a></li>
+      <li><a href="#s17">Changes to These Terms</a></li>
+      <li><a href="#s18">Contact</a></li>
+    </ol>
+  </div>
+
+  <!-- Section 1 -->
+  <h2 id="s1">1. The Urban Boomerang Platform</h2>
+  <p>Urban Boomerang, Inc. ("Urban Boomerang," "we," "our," or "us") operates a community investment platform that enables consumers ("Members") to automatically direct a percentage of qualifying purchases at participating retailers to verified community initiatives and athlete foundations ("Initiatives").</p>
+  <p>Urban Boomerang is <strong>not a bank, financial institution, investment advisor, or charitable organization.</strong> We are a technology platform that facilitates the automatic routing of funds between Members, retailers, and Initiatives. All fund transfers are processed through our payment processor, Stripe Connect.</p>
+
+  <!-- Section 2 -->
+  <h2 id="s2">2. Eligibility and Account Registration</h2>
+  <h3>2.1 Eligibility</h3>
+  <p>To use Urban Boomerang, you must:</p>
+  <ul>
+    <li>Be at least 18 years of age</li>
+    <li>Be a resident of the United States</li>
+    <li>Have a valid U.S. phone number</li>
+    <li>Have a valid U.S. bank account or payment card</li>
+    <li>Not be prohibited from using financial services under applicable law</li>
+  </ul>
+
+  <h3>2.2 Account Registration</h3>
+  <p>You must provide accurate, complete, and current information when creating your account. You are responsible for maintaining the security of your account and for all activities that occur under your account. Notify us immediately at <a href="mailto:security@urbanboomerang.app">security@urbanboomerang.app</a> if you suspect unauthorized access to your account.</p>
+
+  <h3>2.3 One Account Per Person</h3>
+  <p>You may maintain only one Urban Boomerang account. Creating multiple accounts to circumvent contribution limits, referral restrictions, or any other platform rules is prohibited and may result in permanent termination of all associated accounts.</p>
+
+  <!-- Section 3 -->
+  <h2 id="s3">3. Linking Your Financial Account</h2>
+  <h3>3.1 Plaid Integration</h3>
+  <p>Urban Boomerang uses Plaid Technologies, Inc. to establish read-only access to your financial institution. By linking your account, you authorize Urban Boomerang and Plaid to access your transaction data, account balances, and account information solely for the purpose of operating the Urban Boomerang platform.</p>
+
+  <h3>3.2 Read-Only Access</h3>
+  <p>Urban Boomerang has <strong>read-only access</strong> to your financial data. We cannot initiate transactions, transfers, or withdrawals from your account. We do not store your banking credentials. Your linked card continues to function exactly as it did before — we simply monitor transaction data to identify qualifying purchases.</p>
+
+  <h3>3.3 Unlinking</h3>
+  <p>You may unlink your financial account at any time through the app. Upon unlinking, we will stop monitoring new transactions within 24 hours. Historical transaction records are retained per our Privacy Policy.</p>
+
+  <!-- Section 4 -->
+  <h2 id="s4">4. How Boomerangs Work</h2>
+  <h3>4.1 Qualifying Purchases</h3>
+  <p>A "Boomerang" is triggered when you make a purchase at a participating retailer using your linked payment card. Not all purchases qualify — only purchases at retailers who have enrolled in the Urban Boomerang partner program.</p>
+
+  <h3>4.2 Boomerang Calculation</h3>
+  <p>The boomerang amount is calculated as:</p>
+  <div class="highlight-box">
+    <p><strong>Boomerang Amount</strong> = Purchase Amount × Retailer's Contribution Rate<br>
+    <strong>Platform Fee</strong> = Boomerang Amount × 2%<br>
+    <strong>Net to Initiative</strong> = Boomerang Amount − Platform Fee</p>
+    <p style="margin-top:12px; font-size:13px; color:var(--cream35);">Example: $38.00 purchase at a Gold Partner (3% rate) = $1.14 boomerang. Platform fee: $0.02. Net to initiative: $1.12.</p>
+  </div>
+  <p>Contribution rates vary by retailer tier: Bronze (1%), Silver (2%), Gold (3%), Platinum (4%+). Rates are set by the retailer and displayed in the app at the time of purchase.</p>
+
+  <h3>4.3 Hold Period</h3>
+  <p>All boomerangs are held for <strong>30 days</strong> from the transaction date to allow for returns, refunds, and disputes. During this period, the boomerang is in "calculated" status and has not yet been disbursed to the initiative.</p>
+
+  <h3>4.4 Reversals</h3>
+  <p>If Plaid reports that a qualifying transaction was reversed, refunded, or cancelled within the 30-day hold period, the associated boomerang will be automatically reversed. No funds will be disbursed to the initiative for reversed transactions.</p>
+
+  <h3>4.5 Transaction Matching</h3>
+  <p>We use automated systems to match your transactions to participating retailers. Matching is based on merchant name, location, and other transaction metadata. Match accuracy is not guaranteed. If you believe a transaction was incorrectly matched or missed, you may file a dispute through the app.</p>
+
+  <!-- Section 5 -->
+  <h2 id="s5">5. Community Initiatives and Fund Routing</h2>
+  <h3>5.1 Initiative Selection</h3>
+  <p>You may select one active Initiative to receive your boomerangs at any time. You may change your selected Initiative at any time through the app. Changes take effect immediately for future transactions — past boomerangs already directed to an Initiative cannot be redirected.</p>
+
+  <h3>5.2 Initiative Verification</h3>
+  <p>Urban Boomerang reviews and verifies all Initiatives before listing them on the platform. Verification includes confirming legal entity status, reviewing organizational documents, and verifying banking information. However, Urban Boomerang does not guarantee the activities, programs, or outcomes of any Initiative.</p>
+
+  <h3>5.3 Disbursements</h3>
+  <p>Funds are disbursed to Initiatives on a monthly basis, typically on the first business day of each month, for all boomerangs that have completed the 30-day hold period. Disbursements are processed via Stripe Connect to the Initiative's verified bank account.</p>
+
+  <h3>5.4 Minimum Disbursement</h3>
+  <p>Disbursements are made when an Initiative's accumulated balance reaches a minimum of $500. Balances below $500 roll over to the following month.</p>
+
+  <h3>5.5 Initiative Removal</h3>
+  <p>If an Initiative is removed from the platform (due to closure, non-compliance, or other reasons), undisbursed funds allocated to that Initiative will be held for 90 days. If no replacement designation is made, funds will be redistributed proportionally to remaining active Initiatives, or as directed by applicable law.</p>
+
+  <!-- Section 6 -->
+  <h2 id="s6">6. Platform Fees</h2>
+  <p>Urban Boomerang charges a <strong>2% platform fee</strong> on all boomerang amounts. This fee is deducted from the boomerang amount before disbursement to the Initiative. The platform fee covers transaction processing costs, fraud detection, compliance operations, and platform maintenance.</p>
+  <p>There are no membership fees, subscription fees, or fees for linking your card. The platform fee is the only fee charged to Members.</p>
+
+  <!-- Section 7 -->
+  <h2 id="s7">7. Identity Verification (KYC)</h2>
+  <h3>7.1 Contribution Limits</h3>
+  <p>Unverified Members are subject to a <strong>$50 lifetime contribution limit.</strong> This limit exists to comply with anti-money laundering (AML) regulations applicable to financial platforms.</p>
+
+  <h3>7.2 Verification Process</h3>
+  <p>To unlock unlimited contributions, you must complete identity verification through our Plaid Identity integration. Verification requires your full name, date of birth, address, and the last four digits of your Social Security Number. Identity verification is processed by Plaid and subject to their terms and privacy policy.</p>
+
+  <h3>7.3 Verification Outcomes</h3>
+  <p>Identity verification may result in approval, denial, or a request for additional documentation. Urban Boomerang reserves the right to deny verification and limit contributions if we are unable to verify your identity or if required by applicable law.</p>
+
+  <!-- Section 8 -->
+  <h2 id="s8">8. Disputes and Refunds</h2>
+  <h3>8.1 Filing a Dispute</h3>
+  <p>You may file a dispute for any qualifying transaction within <strong>60 days</strong> of the transaction date. Disputes may be filed for the following reasons:</p>
+  <ul>
+    <li>You returned the item but the boomerang was not reversed</li>
+    <li>The boomerang amount is incorrect</li>
+    <li>A non-qualifying purchase was incorrectly matched to a participating retailer</li>
+    <li>A qualifying purchase was not detected</li>
+    <li>You did not make the purchase</li>
+  </ul>
+
+  <h3>8.2 Resolution Timeline</h3>
+  <p>We commit to reviewing all disputes within <strong>72 hours</strong> of submission. Resolution may take up to 10 business days for complex disputes requiring additional investigation.</p>
+
+  <h3>8.3 Outcomes</h3>
+  <p>Dispute outcomes may include: boomerang reversal, boomerang credit, partial adjustment, or no action. Our dispute team's decision is final, subject to applicable law.</p>
+
+  <!-- Section 9 -->
+  <h2 id="s9">9. Referral Program</h2>
+  <p>Urban Boomerang may offer referral bonuses for Members who invite others to the platform. Referral bonuses are subject to the following conditions:</p>
+  <ul>
+    <li>The referred person must create a new account using your referral code</li>
+    <li>The referred person must make at least one qualifying purchase</li>
+    <li>Referral bonuses are added to your boomerang balance and disbursed to your selected Initiative — they are not cash payments</li>
+    <li>Referral fraud (creating fake accounts, self-referrals, or coordinated abuse) will result in permanent termination of all associated accounts and forfeiture of all referral bonuses</li>
+    <li>Urban Boomerang reserves the right to modify or terminate the referral program at any time</li>
+  </ul>
+
+  <!-- Section 10 -->
+  <h2 id="s10">10. Retailer Partnerships</h2>
+  <p>Participating retailers are independent businesses that have contracted with Urban Boomerang to participate in the boomerang program. Urban Boomerang does not endorse, guarantee, or warrant the products, services, or business practices of any participating retailer.</p>
+  <p>Retailer participation may be suspended or terminated at any time. Boomerangs earned from purchases at a retailer prior to their termination will be honored. Future purchases at a terminated retailer will not qualify.</p>
+
+  <!-- Section 11 -->
+  <h2 id="s11">11. Prohibited Conduct</h2>
+  <p>You agree not to:</p>
+  <ul>
+    <li>Create multiple accounts or use another person's account</li>
+    <li>Manipulate transaction data or attempt to generate fraudulent boomerangs</li>
+    <li>Use Urban Boomerang for money laundering, fraud, or any illegal purpose</li>
+    <li>Attempt to reverse engineer, scrape, or exploit our platform or API</li>
+    <li>Circumvent any security measures, rate limits, or access controls</li>
+    <li>Interfere with or disrupt the platform's infrastructure</li>
+    <li>Use bots, scripts, or automated tools to interact with the platform</li>
+    <li>Misrepresent your identity or provide false information</li>
+    <li>Harass, threaten, or harm other users or Urban Boomerang employees</li>
+    <li>Violate any applicable law or regulation</li>
+  </ul>
+  <p>Violation of these prohibitions may result in immediate account suspension, termination, forfeiture of accumulated boomerangs, and referral to law enforcement where appropriate.</p>
+
+  <!-- Section 12 -->
+  <h2 id="s12">12. Intellectual Property</h2>
+  <p>The Urban Boomerang name, logo, platform design, and all content are owned by Urban Boomerang, Inc. and protected by copyright, trademark, and other intellectual property laws. You may not use our intellectual property without our written permission.</p>
+  <p>By using the platform, you grant Urban Boomerang a non-exclusive, royalty-free license to use anonymized, aggregated data about your platform usage for improving our services, conducting research, and marketing the platform (never individual personal data).</p>
+
+  <!-- Section 13 -->
+  <h2 id="s13">13. Disclaimers and Limitation of Liability</h2>
+  <div class="important-box">
+    <p><strong>Urban Boomerang is provided "as is" without warranties of any kind.</strong> We do not guarantee that the platform will be uninterrupted, error-free, or that all qualifying purchases will be detected.</p>
+  </div>
+  <p>To the maximum extent permitted by applicable law, Urban Boomerang shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to lost profits, lost data, or loss of goodwill, arising from your use of the platform.</p>
+  <p>Our total liability to you for any claim arising from your use of Urban Boomerang shall not exceed the total boomerang amounts processed through your account in the 12 months preceding the claim.</p>
+  <p>Some jurisdictions do not allow limitations on implied warranties or liability, so the above limitations may not apply to you.</p>
+
+  <!-- Section 14 -->
+  <h2 id="s14">14. Indemnification</h2>
+  <p>You agree to defend, indemnify, and hold harmless Urban Boomerang, its officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses (including legal fees) arising from your use of the platform, your violation of these Terms, or your violation of any third party's rights.</p>
+
+  <!-- Section 15 -->
+  <h2 id="s15">15. Dispute Resolution and Arbitration</h2>
+  <h3>15.1 Informal Resolution</h3>
+  <p>Before initiating any formal dispute, you agree to contact us at <a href="mailto:legal@urbanboomerang.app">legal@urbanboomerang.app</a> and attempt to resolve the dispute informally. We will make a good-faith effort to resolve disputes within 30 days.</p>
+
+  <h3>15.2 Binding Arbitration</h3>
+  <p>If we cannot resolve a dispute informally, you and Urban Boomerang agree to resolve all claims through binding individual arbitration under the rules of the American Arbitration Association (AAA), except where prohibited by law. Arbitration will take place in Atlanta, Georgia, unless we agree otherwise.</p>
+
+  <h3>15.3 Class Action Waiver</h3>
+  <p>YOU AND URBAN BOOMERANG WAIVE THE RIGHT TO A JURY TRIAL AND TO PARTICIPATE IN CLASS ACTION LAWSUITS. All disputes must be brought in an individual capacity, not as a plaintiff or class member in any class or representative proceeding.</p>
+
+  <h3>15.4 Governing Law</h3>
+  <p>These Terms are governed by the laws of the State of Georgia, without regard to conflict of law principles.</p>
+
+  <!-- Section 16 -->
+  <h2 id="s16">16. Termination</h2>
+  <h3>16.1 By You</h3>
+  <p>You may close your account at any time through Profile → Settings → Close Account, or by contacting <a href="mailto:support@urbanboomerang.app">support@urbanboomerang.app</a>.</p>
+
+  <h3>16.2 By Urban Boomerang</h3>
+  <p>We may suspend or terminate your account at any time, with or without notice, for violation of these Terms, suspected fraud, legal requirements, or discontinuation of the platform. Upon termination:</p>
+  <ul>
+    <li>Your access to the platform will be revoked immediately</li>
+    <li>Pending boomerangs that have completed the 30-day hold period will be disbursed to your selected Initiative</li>
+    <li>Boomerangs still within the hold period will be evaluated on a case-by-case basis</li>
+    <li>Boomerangs forfeited due to violations will not be disbursed</li>
+  </ul>
+
+  <!-- Section 17 -->
+  <h2 id="s17">17. Changes to These Terms</h2>
+  <p>We may update these Terms from time to time. We will notify you of material changes through the app and by updating the "Last Updated" date above. Your continued use of Urban Boomerang after changes take effect constitutes your acceptance of the updated Terms.</p>
+  <p>If we make changes that materially reduce your rights, we will provide at least 30 days' notice before the changes take effect.</p>
+
+  <!-- Section 18 -->
+  <h2 id="s18">18. Contact</h2>
+  <div class="contact-box">
+    <h2>Questions about these Terms?</h2>
+    <p style="color:var(--cream70); margin-bottom:20px;">We're here to help. Reach out any time.</p>
+    <p><strong>General:</strong> <a href="mailto:support@urbanboomerang.app">support@urbanboomerang.app</a></p>
+    <p><strong>Legal:</strong> <a href="mailto:legal@urbanboomerang.app">legal@urbanboomerang.app</a></p>
+    <p><strong>Privacy:</strong> <a href="mailto:privacy@urbanboomerang.app">privacy@urbanboomerang.app</a></p>
+    <p style="margin-top:16px;"><strong>Urban Boomerang, Inc.</strong><br>
+    <span style="color:var(--cream35);">Atlanta, Georgia, United States</span></p>
+  </div>
+
+  <footer-doc>
+    © 2026 Urban Boomerang, Inc. · <a href="/privacy">Privacy Policy</a> · <a href="/">Home</a>
+  </footer-doc>
+</div>
+
+</body>
+</html>

@@ -1139,17 +1139,13 @@
 
   <div class="retailers-logos">
     <div class="retailer-chip gold">🏠 Home Depot <span class="retailer-tier">Silver 2%</span></div>
-    <div class="retailer-chip gold">🍔 Shake Shack <span class="retailer-tier">Gold 3%</span></div>
-    <div class="retailer-chip gold">💇🏾 Drybar <span class="retailer-tier">Gold 3%</span></div>
-    <div class="retailer-chip gold">🍓 Jamba Juice <span class="retailer-tier">Gold 3%</span></div>
-    <div class="retailer-chip">🛒 Whole Foods <span class="retailer-tier">Silver 2%</span></div>
-    <div class="retailer-chip">💊 CVS Pharmacy <span class="retailer-tier">Silver 2%</span></div>
-    <div class="retailer-chip">⛽ Shell Gas <span class="retailer-tier">Silver 2%</span></div>
-    <div class="retailer-chip">👟 Foot Locker <span class="retailer-tier">Silver 2%</span></div>
-    <div class="retailer-chip">🛍 TJ Maxx <span class="retailer-tier">Bronze 1%</span></div>
-    <div class="retailer-chip">🍕 Domino's Pizza <span class="retailer-tier">Bronze 1%</span></div>
-    <div class="retailer-chip">🚗 AutoZone <span class="retailer-tier">Bronze 1%</span></div>
-    <div class="retailer-chip" style="border-style:dashed; color:var(--cream35)">+ 277 more nationwide</div>
+    <div class="retailer-chip gold">☕ Brew Theory ATL <span class="retailer-tier">Gold 3%</span></div>
+    <div class="retailer-chip gold">🍕 Urban Pie Atlanta <span class="retailer-tier">Gold 3%</span></div>
+    <div class="retailer-chip">💈 King's Barbershop <span class="retailer-tier">Silver 2%</span></div>
+    <div class="retailer-chip">💅 Queens Beauty Supply <span class="retailer-tier">Silver 2%</span></div>
+    <div class="retailer-chip">🛒 Walmart <span class="retailer-tier">Bronze 1%</span></div>
+    <div class="retailer-chip">⛽ BP Gas <span class="retailer-tier">Bronze 1%</span></div>
+    <div class="retailer-chip" style="border-style:dashed; color:var(--cream35)">+ 277 more retailers</div>
   </div>
 </div>
 
@@ -1185,14 +1181,19 @@
       Join thousands of conscious consumers nationwide already redirecting their spending power back to the communities that matter most.
     </p>
 
-    <form class="waitlist-form" onsubmit="handleWaitlist(event)">
+    <form class="waitlist-form" action="https://app.us8.list-manage.com/subscribe/post?u=544c6fcdcffb614aec4784949&amp;id=dfbeba353d&amp;f_id=0014c9e2f0" method="post" target="_blank" onsubmit="handleWaitlist(event)">
       <input
         type="email"
+        name="EMAIL"
         class="waitlist-input"
         placeholder="your@email.com"
         id="waitlist-email"
         required
       />
+      <!-- Mailchimp anti-bot field — do not remove -->
+      <div style="position:absolute;left:-5000px;" aria-hidden="true">
+        <input type="text" name="b_544c6fcdcffb614aec4784949_dfbeba353d" tabindex="-1" value="">
+      </div>
       <button type="submit" class="btn-primary" id="waitlist-btn">
         Join →
       </button>
@@ -1277,17 +1278,13 @@ reveals.forEach(el => observer.observe(el))
 
 // ── WAITLIST FORM ──
 function handleWaitlist(e) {
-  e.preventDefault()
-  const email = document.getElementById('waitlist-email').value
+  // Do NOT call e.preventDefault() — let the form submit to Mailchimp
   const btn = document.getElementById('waitlist-btn')
-
-  btn.textContent = '✓ You\'re on the list!'
+  btn.textContent = '✓ Joining...'
   btn.style.background = 'linear-gradient(135deg, #0D8A5A, #1DB87A)'
   btn.style.color = '#fff'
   btn.disabled = true
-
-  // In production — connect to your backend or a service like Mailchimp/ConvertKit
-  console.log('Waitlist signup:', email)
+  // Form submits naturally to Mailchimp in a new tab
 }
 
 // ── MOBILE NAV ──

@@ -1,0 +1,45 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#05080D"/>
+  
+  <!-- Glow effects -->
+  <ellipse cx="1050" cy="150" rx="220" ry="220" fill="#C9A84C" opacity="0.06"/>
+  <ellipse cx="150" cy="500" rx="160" ry="160" fill="#1DB87A" opacity="0.05"/>
+  <ellipse cx="600" cy="315" rx="400" ry="200" fill="#C9A84C" opacity="0.03"/>
+
+  <!-- Logo icon -->
+  <rect x="80" y="72" width="80" height="80" rx="20" fill="#C9A84C" opacity="0.12"/>
+  <rect x="80" y="72" width="80" height="80" rx="20" fill="none" stroke="#C9A84C" stroke-width="1.5" opacity="0.4"/>
+  <text x="120" y="125" text-anchor="middle" font-size="42" font-family="Arial">🔄</text>
+
+  <!-- Brand -->
+  <text x="178" y="105" font-family="Arial" font-weight="800" font-size="22" fill="#F0EAD8" letter-spacing="1">URBAN BOOMERANG</text>
+  <text x="178" y="130" font-family="Arial" font-weight="400" font-size="14" fill="#C9A84C" letter-spacing="3" opacity="0.8">CONSCIOUS SPENDING · REAL IMPACT</text>
+
+  <!-- Main headline -->
+  <text x="80" y="270" font-family="Arial" font-weight="800" font-size="88" fill="#F0EAD8" letter-spacing="-2">Your dollars</text>
+  <text x="80" y="370" font-family="Arial" font-weight="800" font-size="88" fill="#C9A84C" letter-spacing="-2">come back home.</text>
+
+  <!-- Subtext -->
+  <text x="80" y="430" font-family="Arial" font-weight="400" font-size="24" fill="#F0EAD8" opacity="0.5">Every purchase sends a percentage back to your community. No extra steps.</text>
+
+  <!-- Stats bar -->
+  <rect x="80" y="475" width="1040" height="90" rx="18" fill="#0D1219"/>
+  <rect x="80" y="475" width="1040" height="90" rx="18" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Stat 1 -->
+  <text x="280" y="513" text-anchor="middle" font-family="Arial" font-weight="800" font-size="28" fill="#C9A84C">$1M+</text>
+  <text x="280" y="544" text-anchor="middle" font-family="Arial" font-size="16" fill="#F0EAD8" opacity="0.35">Boomeranged</text>
+  <rect x="430" y="490" width="1" height="50" fill="rgba(255,255,255,0.06)"/>
+
+  <!-- Stat 2 -->
+  <text x="600" y="513" text-anchor="middle" font-family="Arial" font-weight="800" font-size="28" fill="#1DB87A">18,000+</text>
+  <text x="600" y="544" text-anchor="middle" font-family="Arial" font-size="16" fill="#F0EAD8" opacity="0.35">Conscious members</text>
+  <rect x="770" y="490" width="1" height="50" fill="rgba(255,255,255,0.06)"/>
+
+  <!-- Stat 3 -->
+  <text x="940" y="513" text-anchor="middle" font-family="Arial" font-weight="800" font-size="28" fill="#C9A84C">$2.1T</text>
+  <text x="940" y="544" text-anchor="middle" font-family="Arial" font-size="16" fill="#F0EAD8" opacity="0.35">Black buying power 2026</text>
+
+  <!-- URL watermark -->
+  <text x="1120" y="610" text-anchor="end" font-family="Arial" font-size="16" fill="#F0EAD8" opacity="0.2">urbanboomerang.app</text>
+</svg>
